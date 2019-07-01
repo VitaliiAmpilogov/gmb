@@ -25,7 +25,7 @@ void LedView::Notify(const LedStates& led_states) {
   PrintStates();
 }
 
-void LedView::PrintStates() {
+void LedView::PrintStates() const {
   for(auto i = 0u; i < states.size(); ++i) {
     std::cout << "L" << i << ": " << LedStateToName(states[i]) << "\n";
   }

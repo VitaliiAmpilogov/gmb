@@ -3,7 +3,7 @@
 
 const std::size_t max_index = 2;
 
-void Controller::ShowGameOver()
+void Controller::ShowGameOver() const
 {
   std::cout << "Game Over!";
   std::cout << "\n------------------------\n";
@@ -14,7 +14,7 @@ void Controller::ShowGameOver()
   std::cout << "\n------------------------\n\n\n";
 }
 
-void Controller::ShowNewGame()
+void Controller::ShowNewGame() const
 {
   std::cout << "Guess 3 letters game started" << std::endl;
 }

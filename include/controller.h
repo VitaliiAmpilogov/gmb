@@ -7,7 +7,7 @@
 #include "iobserver.h"
 #include "model.h"
 
-class Controller {
+class Controller final {
   public:
     Controller(Model& _model, ButtonView& _button_view)
       : model{_model},
@@ -18,8 +18,8 @@ class Controller {
 	  }
 	  void Run();
   private:
-	  void ShowGameOver();
-	  void ShowNewGame();
+	  void ShowGameOver() const;
+	  void ShowNewGame() const;
     LedState Compare(const ButtonId& id) const;
 	  void ShiftLedStates(LedStates& states, LedState new_state) const;
     Model& model;

@@ -4,12 +4,12 @@
 #include "iobserver.h"
 #include "led_state.h"
 
-class LedView : public IObserver<LedStates> {
+class LedView final : public IObserver<LedStates> {
   public:
     LedView(){}
     virtual void Notify(const LedStates& led_states) override;
   private:
-    void PrintStates();
+    void PrintStates() const;
     LedStates states;
 };
 

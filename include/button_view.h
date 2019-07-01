@@ -5,7 +5,7 @@
 
 class ButtonView {
   public:
-	  ButtonId GetPressedButton();
+	  ButtonId GetPressedButton() const;
 };
 
 #endif  // BUTTON_VIEW_H
