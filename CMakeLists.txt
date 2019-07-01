@@ -1,0 +1,7 @@
+cmake_minimum_required( VERSION 3.10.2 )
+
+SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11" )
+include_directories(${CMAKE_SOURCE_DIR}/include)
+FILE(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.cpp")
+PROJECT( gmb )
+ADD_EXECUTABLE( ${PROJECT_NAME} ${SOURCES} )
