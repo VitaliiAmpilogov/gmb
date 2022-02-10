@@ -1,0 +1,3 @@
+[submodule "UdpSocket"]
+	path = UdpSocket
+	url = https://github.com/VitaliiAmpilogov/UdpSocket.git
